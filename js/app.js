@@ -18,6 +18,13 @@ form.addEventListener('submit', (event) => {
 
 })
 
+const button = document.querySelector('#button');
+console.dir(button);
+button.addEventListener('click', ()=> {
+  bookslist.innerHTML = '';
+
+})
+
 
 
 })
