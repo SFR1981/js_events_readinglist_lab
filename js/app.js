@@ -8,11 +8,12 @@ form.addEventListener('submit', (event) => {
   const newBook = document.createElement('li');
     const title = event.target.title.value;
     const author = event.target.author.value;
-    const category = event.target.category.value; 
+    const category = event.target.category.value;
 
     newBook.textContent = `${title} ${author} ${category}`
 
   bookslist.appendChild(newBook);
+  form.reset();
 
 
 })
